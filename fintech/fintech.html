@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fintech.css">
+
+    
+    <title>Sua Fintech</title>
+</head>
+<body>
+
+   <!-- Barra de Navegação -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand"  href="#">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Serviços</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contato</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+    <section class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1>Sua Fintech</h1>
+                    <p>Transformando suas finanças com inovação e segurança.</p>
+                    <a href="#" class="btn btn-primary">Saiba Mais</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/pexels-tima-miroshnichenko-6693661.jpg" alt="Imagem de Finanças" class="img-fluid img-financas">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h2>Conta Digital</h2>
+                    <p>Gerencie suas finanças de forma fácil e rápida com nossa conta digital.</p>
+                </div>
+                <div class="col-lg-4">
+                    <h2>Investimentos</h2>
+                    <p>Explore oportunidades de investimento e faça seu dinheiro render mais.</p>
+                      <!-- Botão da Calculadora -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#calculadoraModal">
+        Calculadora de Rendimentos
+    </button>
+
+    <!-- Modal da Calculadora de Rendimentos -->
+    <div class="modal fade" id="calculadoraModal" tabindex="-1" role="dialog" aria-labelledby="calculadoraModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="calculadoraModalLabel">Calculadora de Rendimentos</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!-- Conteúdo da Calculadora de Rendimentos vai aqui -->
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="capital">Capital Investido:</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">R$</span>
+                            </div>
+                            <input type="number" id="capital" class="form-control" placeholder="Insira o capital investido">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="taxa">Taxa de Rendimento (% ao ano):</label>
+                        <input type="number" id="taxa" class="form-control" placeholder="Insira a taxa de rendimento">
+                    </div>
+                    <div class="form-group">
+                        <label for="periodo">Período de Investimento (anos):</label>
+                        <input type="number" id="periodo" class="form-control" placeholder="Insira o período de investimento">
+                    </div>
+                    <input type="text" id="resultado" class="form-control" readonly>
+                    <div class="calculator-buttons">
+                        <button onclick="calcularRendimento()">Calcular</button>
+                        <button onclick="limparCampos()">Limpar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                </div>
+                <div class="col-lg-4">
+                    <h2>Cartões de Crédito</h2>
+                    <p>Escolha entre uma variedade de cartões de crédito projetados para atender às suas necessidades.</p>
+                </div>
+            </div>
+        </div>
+
+        
+    </section>
+
+
+    
+
+
+
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 Sua Fintech. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+     <!-- Bootstrap Scripts -->
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+ 
+     <!-- Seu Script JavaScript -->
+     <script src="js/fintech.js"></script>
+</body>
+</html>

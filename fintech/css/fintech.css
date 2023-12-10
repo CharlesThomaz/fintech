@@ -1,0 +1,88 @@
+
+
+/* Hero Section */
+.hero {
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 3em;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+/* Features Section */
+.features {
+    padding: 50px 0;
+}
+
+.features h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.features p {
+    font-size: 1.1em;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+/* Estilos da Calculadora */
+.calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.calculator-buttons button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+/* Estilo adicional para a imagem */
+.img-financas {
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    transition: transform 0.3s ease-in-out; /* Adiciona um efeito de transição suave */
+}
+
+.img-financas:hover {
+    transform: scale(1.1); /* Aumenta a escala ao passar o mouse */
+}
+
+
+ /* Adicionando estilo à barra de navegação */
+ .navbar {
+    background-color: #49a55d; /* Cor da barra de navegação */
+    border-bottom: 4px solid #49a55d; /* Cor da borda inferior da barra de navegação */
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #49a55d; /* Cor dos itens de navegação */
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-color: #ecf0f1; /* Cor do ícone de menu para dispositivos móveis */
+}
+
+/* Estilizando os botões para verde */
+.btn-primary {
+    background-color: #2ecc71; /* Cor verde para o botão primário */
+    border-color: #2ecc71; /* Cor da borda do botão primário */
+    color: #fff; /* Cor do texto do botão primário */
+}
+
+.btn-primary:hover {
+    background-color: #27ae60; /* Cor verde mais escura ao passar o mouse */
+    border-color: #27ae60; /* Cor da borda mais escura ao passar o mouse */
+}
